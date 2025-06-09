@@ -1,0 +1,138 @@
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #555555; /* Change this color as desired */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Header title */
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffffff22;
+  border-radius: 6px;
+  color: #ffd700; /* Optional hover color */
+}
+
+
+/* Main Section */
+main {
+  background-image: url('../img/homeBackground.jpg'); /* update path as needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: white; /* optional, depending on image */
+}
+
+
+#intro h2 {
+  margin-bottom: 15px;
+}
+
+#intro, #soccer, #life p {
+  line-height: 1.6;
+  font-size: 1.5em;
+  flex: 1;
+}
+
+#intro img {
+   display: block;
+   width: 100%;         /* Makes the image expand to the full width of its container */
+   height: auto;
+   border-radius: 12px;
+   margin-bottom: 20px; /* Optional spacing below the image */
+ }
+
+
+/* PAGES TEXT BLOCKS */
+#acquiring, #implementation, #expanding, #intro {
+  display: flex;
+  flex-direction: column; /* This makes them stack vertically */
+  align-items: center;    /* This centers them horizontally */
+  gap: 30px;              /* Optional spacing between blocks */
+  padding: 40px;
+  min-height: 100vh;
+}
+.text-block {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #222;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transform: translateX(25%);
+}
+
+.text-block h2 {
+  margin-bottom: 15px;
+}
+
+.text-block p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Image Slider for intro */
+.image-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.image-slider img {
+  width: 100%;            /* Fill the width of the container */
+  max-width: 100%;        /* Prevent overflow */
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-slider button {
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.image-slider button:hover {
+  background-color: #555;
+}
